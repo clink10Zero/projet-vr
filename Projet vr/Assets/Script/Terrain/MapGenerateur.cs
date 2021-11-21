@@ -26,19 +26,28 @@ public class MapGenerateur : MonoBehaviour
     public Transform map;
     public Chunk patronChunk;
 
-    Dictionary< MapCoordonnee, Chunk> chunks;
+   public Dictionary< (int,int), Chunk> chunks;
 
     public void Start()
     {
+        this.chunks = new Dictionary<(int,int), Chunk>();
         Vector3 postionMap = map.transform.position;
-        for(int x = 0; x < 5; x++)
+        for(int x = 0; x < 2; x++)
         {
-            for(int z = 0; z < 5; z++)
+            for(int z = 0; z < 2; z++)
             {
                 Chunk courant = Instantiate<Chunk>(patronChunk, new Vector3(postionMap.x + (x * 16), postionMap.y, postionMap.z + (z * 16)), Quaternion.identity, map);
-                courant.createChunk(16, 256, 16, x, z, seed, noiseScale, octaves, persistance, lacunarity, new Vector3(x * 16, 0, z * 16), new Vector2(x * 16, z * 16), seuil);
-                
-                this.chunks.Add(new MapCoordonnee(x, z), courant);
+                courant.createChunk(16, 256, 16, x, z, seed, noiseScale, octaves, persistance, lacunarity, new Vector3(x * 16, 0, z * 16), new Vector2(x * 16, z * 16), seuil, this);
+                this.chunks.Add((x, z), courant);
+            }
+        }
+        
+        for(int x = 0; x < 2; x++)
+        {
+            for(int z = 0; z < 2; z++)
+            {
+                Chunk courant = chunks[(x, z)];
+                courant.refresh();
             }
         }
     }

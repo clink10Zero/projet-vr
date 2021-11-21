@@ -8,7 +8,7 @@ public class Chunk : MonoBehaviour
     public int x, z;
     public Bloc blocPatron;
 
-    Bloc[,,] data;
+    public Bloc[,,] data;
     
     private List<Vector3> vertices;
     private List<int> triangles;
@@ -16,7 +16,9 @@ public class Chunk : MonoBehaviour
 
     Mesh mesh;
 
-    public void createChunk(int xSize, int ySize, int zSize, int x, int z, int seed, float noiseScale, int octaves, float persistance, float lacunarity, Vector3 offset3D, Vector2 offset2D, float seuil)
+    public MapGenerateur map;
+
+    public void createChunk(int xSize, int ySize, int zSize, int x, int z, int seed, float noiseScale, int octaves, float persistance, float lacunarity, Vector3 offset3D, Vector2 offset2D, float seuil, MapGenerateur mapGen)
     {
         this.vertices = new List<Vector3>();
         this.triangles = new List<int>();
@@ -29,11 +31,12 @@ public class Chunk : MonoBehaviour
         this.x = x;
         this.z = z;
 
+        this.map = mapGen;
+
         float[,] height = Noise.GenerateNoiseMap(xSize, zSize, seed, noiseScale, octaves, persistance, lacunarity, offset2D);
         float[,,] map = Noise.Noise3D(xSize, ySize, zSize, seed, noiseScale, octaves, persistance, lacunarity, offset3D);
 
         setData(height, map, seuil);
-        refresh();
 
         Debug.Log("chunk : " + x + " : " + z  + "\n" +
             "vertices : " + vertices.Count + "\n" +
@@ -92,31 +95,21 @@ public class Chunk : MonoBehaviour
     public void triangulationCube(int x, int z, int y)
     {
         mesh = new Mesh();
-        if (y < ySize - 1)
+        //top
+        if (!data[x, y + 1, z].terre)
         {
-            if (!data[x, y + 1, z].terre)
-            {
-                this.AddFace(new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f));
-            }
+             this.AddFace(new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f));
         }
-        else
-        {
-            this.AddFace(new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f));
-        }
-
-        if(y > 0)
-        {
-            if (!data[x, y - 1, z].terre)
-            {
-                this.AddFace(new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
-            }
-        }
-        else
+       
+        //bottom
+        if(y > 0 && !data[x, y - 1, z].terre)
         {
             this.AddFace(new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
         }
+        //pas de else, y a pas de truc sous le sol
 
-        if(z < zSize - 1)
+        //north
+        if(z != zSize -1)
         {
             if(!data[x, y, z + 1].terre)
             {
@@ -125,10 +118,20 @@ public class Chunk : MonoBehaviour
         }
         else
         {
-            this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f));
+            try
+            {
+                if (!map.chunks[(this.x, this.z + 1)].data[x, y, 0].terre)
+                {
+                    this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f));
+                }
+            }
+            catch(KeyNotFoundException){
+                this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f));
+            }
         }
 
-        if(z > 0)
+        //south
+        if(z != 0)
         {
             if(!data[x, y, z - 1].terre)
             {
@@ -137,10 +140,22 @@ public class Chunk : MonoBehaviour
         }
         else
         {
-            this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
+            try
+            {
+                if (!map.chunks[(this.x, this.z - 1)].data[x, y, zSize - 1].terre)
+                {
+                    this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
+                }
+            }
+            catch (KeyNotFoundException)
+            {
+                this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
+            }
+
         }
 
-        if(x < xSize - 1)
+        //east
+        if(x != xSize - 1)
         {
             if(!data[x + 1, y, z].terre)
             {
@@ -149,10 +164,22 @@ public class Chunk : MonoBehaviour
         }
         else
         {
-            this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f));
+            try
+            {
+                if (!map.chunks[(this.x + 1, this.z)].data[0, y, z].terre)
+                {
+                    this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f));
+                }
+            }
+            catch (KeyNotFoundException)
+            {
+                this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f));
+            }
+           
         }
 
-        if(x > 0)
+        //west
+        if(x != 0)
         {
             if(!data[x - 1, y, z].terre)
             {
@@ -161,7 +188,18 @@ public class Chunk : MonoBehaviour
         }
         else
         {
-            this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f));
+            try
+            {
+                if (!map.chunks[(this.x - 1, this.z)].data[xSize - 1, y, z].terre)
+                {
+                    this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f));
+                }
+            }
+            catch (KeyNotFoundException)
+            {
+                this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f));
+            }
+
         }
 
         mesh.vertices = vertices.ToArray();
@@ -175,10 +213,27 @@ public class Chunk : MonoBehaviour
     public void AddFace(Vector3 v1, Vector3 v2, Vector3 v3, Vector3 v4)
     {
         int index = this.vertices.Count;
-        
+
+        (int, int) indexV1 = Fct(index,v1);
+        (int, int) indexV2 = Fct(indexV1.Item1, v2);
+        (int, int) indexV3 = Fct(indexV2.Item1, v3);
+        (int, int) indexV4 = Fct(indexV3.Item1, v4);
+
+        this.triangles.Add(indexV1.Item2);
+        this.triangles.Add(indexV2.Item2);
+        this.triangles.Add(indexV3.Item2);
+        this.triangles.Add(indexV2.Item2);
+        this.triangles.Add(indexV4.Item2);
+        this.triangles.Add(indexV3.Item2);
+    }
+
+
+
+    (int,int) Fct(int index, Vector3 v1)
+    {
         int indexV1 = index;
         int tmp = this.vertices.IndexOf(v1);
-        if (tmp != -1)
+        if (tmp != -1)//s'il existe déjà
         {
             indexV1 = tmp;
         }
@@ -187,66 +242,6 @@ public class Chunk : MonoBehaviour
             this.vertices.Add(v1);
             index++;
         }
-
-        int indexV2 = index;
-        tmp = this.vertices.IndexOf(v2);
-        if (tmp != -1)
-        {
-            indexV2 = tmp;
-        }
-        else
-        {
-            this.vertices.Add(v2);
-            index++;
-        }
-        
-        int indexV3 = index;
-        tmp = this.vertices.IndexOf(v3);
-        if (tmp != -1)
-        {
-            indexV3 = tmp;
-        }
-        else
-        {
-            this.vertices.Add(v3);
-            index++;
-        }
-
-        int indexV4 = index;
-        tmp = this.vertices.IndexOf(v4);
-        if (tmp != -1)
-        {
-            indexV4 = tmp;
-        }
-        else
-        {
-            this.vertices.Add(v4);
-            index++;
-        }
-
-        this.triangles.Add(indexV1);
-        this.triangles.Add(indexV2);
-        this.triangles.Add(indexV3);
-        this.triangles.Add(indexV2);
-        this.triangles.Add(indexV4);
-        this.triangles.Add(indexV3);
+        return (index,indexV1);
     }
-
-    /*
-    case BlocDirection.Haut:
-        
-    break;
-    case BlocDirection.Avant:
-        
-    break;
-    case BlocDirection.Droite:
-    break;
-    case BlocDirection.Bas:
-
-    break;
-    case BlocDirection.Arrier:
-    break;
-    case BlocDirection.Gauche:
-    break;
-    */
 }
