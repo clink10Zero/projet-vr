@@ -366,6 +366,30 @@ MonoBehaviour:
   seed: 0
   offset2D: {x: 0, y: 0}
   offset3D: {x: 0, y: 0}
+  modificateur:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.024970492
+      outSlope: 0.024970492
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.32083333
+    - serializedVersion: 3
+      time: 1
+      value: 0.4934044
+      inSlope: 1.4969505
+      outSlope: 1.4969505
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.070833325
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   map: {fileID: 1466551167}
   patronChunk: {fileID: 5856635416419531132, guid: 90c3dae2934dd8f489f44208e06163dc, type: 3}
 --- !u!4 &1472222819

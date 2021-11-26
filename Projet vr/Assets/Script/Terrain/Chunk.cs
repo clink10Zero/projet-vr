@@ -16,6 +16,8 @@ public class Chunk : MonoBehaviour
 
     Mesh mesh;
 
+    public AnimationCurve modificateur;
+
     public MapGenerateur map;
 
     public void createChunk(int xSize, int ySize, int zSize, int x, int z, int seed, float noiseScale, int octaves, float persistance, float lacunarity, Vector3 offset3D, Vector2 offset2D, float seuil, MapGenerateur mapGen)
@@ -51,20 +53,20 @@ public class Chunk : MonoBehaviour
         {
             for (int z = 0; z < zSize; z++)
             {
-                int yHeight = (int)(32 + (32 * height[x, z]));
+                int yHeight = (int)(32 + (32 * modificateur.Evaluate(height[x, z])));
                 for (int y = 0; y < ySize; y++)
                 {
                     Vector3 postionChunk = this.transform.position;
                     data[x, y, z] = Instantiate<Bloc>(blocPatron, new Vector3(postionChunk.x + x, postionChunk.y + y, postionChunk.z + z), Quaternion.identity, this.transform);
                     if (y < yHeight) {
-                        if (map[x, y, z] < seuil)
-                        {
+                        //if (map[x, y, z] < seuil)
+                        //{
                             data[x, y, z].terre = true;
-                        }
-                        else
-                        {
-                            data[x, y, z].terre = false;
-                        }
+                        //}
+                        //else
+                        //{
+                            //data[x, y, z].terre = false;
+                        //}
                     }
                     else
                         data[x, y, z].terre = false;

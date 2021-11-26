@@ -48,7 +48,34 @@ MonoBehaviour:
   xSize: 16
   ySize: 128
   zSize: 16
+  x: 0
+  z: 0
   blocPatron: {fileID: 2189452797212992277, guid: 21196850f10b02a4389bf37806a9dd24, type: 3}
+  modificateur:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.49811506
+      inSlope: 1.3393532
+      outSlope: 1.3393532
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.07916665
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  map: {fileID: 0}
 --- !u!33 &5856635416419530882
 MeshFilter:
   m_ObjectHideFlags: 0
