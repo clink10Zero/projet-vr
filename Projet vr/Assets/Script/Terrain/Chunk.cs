@@ -216,10 +216,10 @@ public class Chunk : MonoBehaviour
     {
         int index = this.vertices.Count;
 
-        (int, int) indexV1 = Fct(index,v1);
-        (int, int) indexV2 = Fct(indexV1.Item1, v2);
-        (int, int) indexV3 = Fct(indexV2.Item1, v3);
-        (int, int) indexV4 = Fct(indexV3.Item1, v4);
+        (int, int) indexV1 = getIndex(index,v1);
+        (int, int) indexV2 = getIndex(indexV1.Item1, v2);
+        (int, int) indexV3 = getIndex(indexV2.Item1, v3);
+        (int, int) indexV4 = getIndex(indexV3.Item1, v4);
 
         this.triangles.Add(indexV1.Item2);
         this.triangles.Add(indexV2.Item2);
@@ -231,7 +231,7 @@ public class Chunk : MonoBehaviour
 
 
 
-    (int,int) Fct(int index, Vector3 v1)
+    (int,int) getIndex(int index, Vector3 v1)
     {
         int indexV1 = index;
         int tmp = this.vertices.IndexOf(v1);
