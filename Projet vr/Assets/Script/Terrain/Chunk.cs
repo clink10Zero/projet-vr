@@ -62,11 +62,27 @@ public class Chunk : MonoBehaviour
                         //if (map[x, y, z] < seuil)
                         //{
                             data[x, y, z].terre = true;
+
                         //}
                         //else
                         //{
-                            //data[x, y, z].terre = false;
+                        //data[x, y, z].terre = false;
                         //}
+                        if (y<30)
+                        {
+                            data[x, y, z].blocType = ItemProperties.ItemName.STONE_BLOC;
+                        }
+                        else
+                        {
+                            if (y<50)
+                            {
+                                data[x, y, z].blocType = ItemProperties.ItemName.DIRT_BLOC;
+                            }
+                            else
+                            {
+                                data[x, y, z].blocType = ItemProperties.ItemName.SNOW_BLOC;
+                            }
+                        }
                     }
                     else
                         data[x, y, z].terre = false;
