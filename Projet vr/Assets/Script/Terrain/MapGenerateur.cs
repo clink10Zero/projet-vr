@@ -28,7 +28,7 @@ public class MapGenerateur : MonoBehaviour
 
    public Dictionary< (int,int), Chunk> chunks;
 
-    public void Start()
+    public void Generation()
     {
         this.chunks = new Dictionary<(int,int), Chunk>();
         Vector3 postionMap = map.transform.position;
@@ -46,8 +46,20 @@ public class MapGenerateur : MonoBehaviour
         {
             for(int z = 0; z < 2; z++)
             {
-                Chunk courant = chunks[(x, z)];
+                Chunk courant = this.chunks[(x, z)];
                 courant.refresh();
+            }
+        }
+    }
+
+    public void Clear()
+    {
+        for (int x = 0; x < 2; x++)
+        {
+            for (int z = 0; z < 2; z++)
+            {
+                Chunk courant = this.chunks[(x, z)];
+                courant.clear();
             }
         }
     }

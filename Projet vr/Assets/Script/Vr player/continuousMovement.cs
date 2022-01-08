@@ -23,7 +23,7 @@ public class continuousMovement : MonoBehaviour
     void Start()
     {
         character = GetComponent<CharacterController>();
-        //rig = GetComponent<XRRig>();
+        rig = GetComponent<XROrigin>();
     }
 
     // Update is called once per frame
@@ -31,7 +31,6 @@ public class continuousMovement : MonoBehaviour
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
-
     }
 
     void FixedUpdate()
