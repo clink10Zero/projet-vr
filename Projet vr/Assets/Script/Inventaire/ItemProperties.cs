@@ -86,10 +86,11 @@ public static class ItemProperties
 
         FaceTexture dirtTexture = new FaceTexture(2, 2, 7, 1, 2, 2);
         FaceTexture stoneTexture = new FaceTexture(0, 0, 0, 0, 0, 0);
+        FaceTexture woodTexture = new FaceTexture(4, 4, 4, 4, 4, 4);
 
         createItemProperties(ItemName.DIRT_BLOC, ItemType.BLOC, 64, dirtTexture);
         createItemProperties(ItemName.STONE_BLOC, ItemType.BLOC, 64, stoneTexture);
-        createItemProperties(ItemName.SNOW_BLOC, ItemType.BLOC, 64, stoneTexture);
+        createItemProperties(ItemName.SNOW_BLOC, ItemType.BLOC, 64, woodTexture);
         createItemProperties(ItemName.PICKAXE, ItemType.TOOL, 1);
         createItemProperties(ItemName.AXE, ItemType.TOOL, 1);
     }
