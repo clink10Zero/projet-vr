@@ -15,12 +15,12 @@ E:/Nouveau dossier/GitHub/projet-vr/Projet vr
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49274
+55287
 Successfully changed project path to: E:/Nouveau dossier/GitHub/projet-vr/Projet vr
 E:/Nouveau dossier/GitHub/projet-vr/Projet vr
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 79.54 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 1.96 ms.
+Refreshing native plugins compatible for Editor in 92.99 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 1.89 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/Nouveau dossier/GitHub/projet-vr/Projet vr/Assets
@@ -36,186 +36,18 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003093 seconds.
+Registered in 0.007195 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 84.03 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.15 ms.
+Refreshing native plugins compatible for Editor in 84.27 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.11 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.879 seconds
+- Completed reload, in  5.481 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009637 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 60.81 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.10 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.552 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.10 ms.
-Unloading 3604 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.6 MB.
-System memory in use after: 154.8 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 4041.
-Total: 3.594000 ms (FindLiveObjects: 0.408500 ms CreateObjectMapping: 0.164900 ms MarkObjects: 2.871400 ms  DeleteObjects: 0.147800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Script/Player.cs
-  artifactKey: Guid(78c08e34d360982499fe5941b7963f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Player.cs using Guid(78c08e34d360982499fe5941b7963f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95f2d7514b38084d49ce65a4fc5ec00') in 0.132631 seconds 
-  Import took 0.268065 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1066.772117 seconds.
-  path: Assets/Script/Player.cs
-  artifactKey: Guid(78c08e34d360982499fe5941b7963f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Player.cs using Guid(78c08e34d360982499fe5941b7963f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c86c5a5c95dd06116a96399df519c3') in 0.008129 seconds 
-  Import took 0.211295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.386307 seconds.
-  path: Assets/Shader/TerrainLit.shadergraph
-  artifactKey: Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/TerrainLit.shadergraph using Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe33ef7020c8f7bd82735b18aedb173') in 0.180893 seconds 
-  Import took 0.220135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019686 seconds.
-  path: Assets/Shader/TerrainLit.shadergraph
-  artifactKey: Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/TerrainLit.shadergraph using Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe33ef7020c8f7bd82735b18aedb173') in 0.007882 seconds 
-  Import took 0.118363 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.461807 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.13 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.623 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.10 ms.
-Unloading 3463 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.9 MB.
-System memory in use after: 147.1 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4045.
-Total: 3.410800 ms (FindLiveObjects: 0.384200 ms CreateObjectMapping: 0.182700 ms MarkObjects: 2.680700 ms  DeleteObjects: 0.162200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 1.093148 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.17 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.255 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.01 ms, found 11 plugins.
-Preloading 2 native plugins for Editor in 0.09 ms.
-Unloading 3463 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.9 MB.
-System memory in use after: 147.2 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4049.
-Total: 21.068100 ms (FindLiveObjects: 0.976100 ms CreateObjectMapping: 4.029300 ms MarkObjects: 16.013600 ms  DeleteObjects: 0.044800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2439.622451 seconds.
-  path: Assets/Shader/TerrainLit.shadergraph
-  artifactKey: Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/TerrainLit.shadergraph using Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24bacfd9227dc384efec50664b7b4100') in 0.032832 seconds 
-  Import took 0.209736 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.640499 seconds.
-  path: Assets/Shader/TerrainLit.shadergraph
-  artifactKey: Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/TerrainLit.shadergraph using Guid(c5fe122cbc48edb4595afc6003faad80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24bacfd9227dc384efec50664b7b4100') in 0.006162 seconds 
-  Import took 0.105412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.634485 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87d9c479dab8d95beeb458813b3818a') in 0.103230 seconds 
-  Import took 0.215324 seconds .
-
+Registered in 0.300528 seconds.

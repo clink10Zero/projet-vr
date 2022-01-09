@@ -1,0 +1,1755 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.13f1 (71691879b7f5) revision 7432472'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1415; Version 2009; 64bit' Language: 'fr' Physical Memory: 8037 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+E:/Nouveau dossier/GitHub/projet-vr/Projet vr
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+55287
+Successfully changed project path to: E:/Nouveau dossier/GitHub/projet-vr/Projet vr
+E:/Nouveau dossier/GitHub/projet-vr/Projet vr
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 96.91 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 1.85 ms.
+Initialize engine version: 2020.3.13f1 (71691879b7f5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Nouveau dossier/GitHub/projet-vr/Projet vr/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   
+    VRAM:     4021 MB
+    Driver:   30.0.14.9729
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003221 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 76.25 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.97 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.916 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009135 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 179.08 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.166 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.11 ms.
+Unloading 3608 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 154.3 MB.
+System memory in use after: 154.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 4042.
+Total: 15.474400 ms (FindLiveObjects: 0.365800 ms CreateObjectMapping: 0.156900 ms MarkObjects: 14.388200 ms  DeleteObjects: 0.561300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0dd9ff3dd474da8c3b4113e875fe717') in 0.128337 seconds 
+  Import took 0.299563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 656.073250 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2706cc4010b9891114c5532a3686208') in 0.006247 seconds 
+  Import took 0.136133 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.155655 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.40 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.326 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.10 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.4 MB.
+System memory in use after: 146.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4046.
+Total: 6.654000 ms (FindLiveObjects: 0.372900 ms CreateObjectMapping: 0.157600 ms MarkObjects: 6.091000 ms  DeleteObjects: 0.030800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1317.347298 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004073 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.940928 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000527 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146442 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000870 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.016290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144441 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000285 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.143499 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000482 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141482 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000358 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.008793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.139328 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000447 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.011420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140765 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000349 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.137314 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001405 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.013626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136775 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001981 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.012588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136183 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000718 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.013908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.246008 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001145 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.027753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.218721 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000823 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.029150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.138293 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000535 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.017121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148854 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000757 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.032042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.135469 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000457 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.020121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.159493 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000550 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.135553 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001398 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.189598 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001736 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.029716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144074 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000688 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.017054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.177137 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001921 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.039435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.127840 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000336 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147029 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000374 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142523 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000552 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.138314 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000478 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.135525 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000436 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.154248 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002321 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.016759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147000 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000543 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140835 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003706 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.017395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141144 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000664 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131711 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000445 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.133087 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001440 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.182750 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000476 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.022085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.229036 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000681 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.021906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.155147 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000536 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.154719 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000461 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.012781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.193216 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000517 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.027165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146265 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000320 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131869 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001235 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.012565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146747 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000542 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.011663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.183289 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.005826 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.039196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.156973 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002870 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142463 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000460 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131546 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000336 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.011775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141886 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000583 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.016942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.139966 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001985 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.020738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.138314 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001261 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.016423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.130028 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000386 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.159155 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000438 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.176687 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001761 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.072013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.417207 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002979 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.043748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.259139 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000616 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.068458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.198670 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006572 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.035695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.138886 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000618 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.023912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146550 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001992 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148994 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001361 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146764 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000955 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.156197 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001747 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.022019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.177383 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000702 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.027071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.214276 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000487 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.071087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.154979 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.006432 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.036569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144492 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001216 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.024192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.180875 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001780 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.023932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.177821 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002445 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.056349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.173818 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000677 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.029077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148523 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001131 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.021871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.139736 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001501 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.017293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142163 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000757 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.027128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141575 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000533 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140183 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000621 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.012999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142987 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000311 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.011937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.151649 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001068 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.022825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.145434 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000368 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146841 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001615 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129553 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000346 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129251 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000501 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.130921 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000418 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136752 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001056 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.013632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.133705 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000382 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.152398 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000569 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.145360 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000598 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.013976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.135898 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000325 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.012883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.149251 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001637 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.016540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.175735 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001221 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.020803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.169153 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001216 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.031879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144945 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000487 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.021300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.173918 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001371 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.019964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.145050 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000459 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.139211 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000562 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.011999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146145 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000758 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.016229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.161517 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002309 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.048334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.118320 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001424 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.022227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147607 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000553 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.021027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.161546 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000467 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.020605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.150589 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000963 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.022213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.145126 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000980 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.017088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.163185 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000460 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.143826 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000494 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136636 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000464 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.020752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148101 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001202 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.019257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.150494 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002329 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147204 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003868 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.024665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147369 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000370 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.012352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.149218 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000759 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.205822 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000446 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.017256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131896 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000665 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148089 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000610 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.279602 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000415 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.127846 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000287 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.008416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.135509 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000344 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.127642 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000364 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.137169 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000316 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.007671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131189 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000476 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.008753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129451 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000414 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129341 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000387 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.135476 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000328 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.012191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.151178 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002635 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.014098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.143232 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002026 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.011872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146147 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.012283 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.018490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.131126 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000276 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.008884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.133637 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000381 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.008964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.132235 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000386 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141422 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000317 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136241 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000285 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141132 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000924 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.015710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.127903 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000306 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.008974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129429 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000332 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.009930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.133119 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000455 seconds  code(4) message(Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z')
+  ERROR: Build asset version error: assets/script/inventaire/itemproperties.cs in SourceAssetDB has modification time of '2022-01-09T15:27:14.4041572Z' while content on disk has modification time of '2022-01-09T15:40:23.9919582Z'
+  Import took 0.010143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.412053 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285251582ab062057560410e1b87a6f6') in 0.010687 seconds 
+  Import took 0.111863 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.303807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.49 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.091 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 1.30 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.5 MB.
+System memory in use after: 146.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4050.
+Total: 85.156300 ms (FindLiveObjects: 14.140100 ms CreateObjectMapping: 2.206100 ms MarkObjects: 66.877700 ms  DeleteObjects: 1.926500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 733.595105 seconds.
+  path: Assets/Script/Inventaire/ItemProperties.cs
+  artifactKey: Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Inventaire/ItemProperties.cs using Guid(b3031b404e91cf24991703217a0bfa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd7914bb66928836a9f7b40cdc3d1af') in 0.015888 seconds 
+  Import took 0.242319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 876.138089 seconds.
+  path: Assets/Textures/BlockAtlas.png
+  artifactKey: Guid(e0486361b8d91904dbf2236ee896dec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BlockAtlas.png using Guid(e0486361b8d91904dbf2236ee896dec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce65549a55805334bd7784acc67ed0e') in 0.458977 seconds 
+  Import took 0.612558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/Textures/ReferenceTexture.png
+  artifactKey: Guid(9e5ba7c1b8712384997d6571acd8df91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/ReferenceTexture.png using Guid(9e5ba7c1b8712384997d6571acd8df91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aeb963ef21f3c939a36b1618f9403af') in 0.016511 seconds 
+  Import took 0.037410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001133 seconds.
+  path: Assets/Textures/Blocks.png
+  artifactKey: Guid(b72def1cb9957634197e5c20224e7369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Blocks.png using Guid(b72def1cb9957634197e5c20224e7369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c5b31c74b85ecfbe7176ebb9338bbd') in 0.015105 seconds 
+  Import took 0.028822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/Textures/BlockIcons.png
+  artifactKey: Guid(2822219ca9b3cfc40aec85f96a4e33cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BlockIcons.png using Guid(2822219ca9b3cfc40aec85f96a4e33cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a054442e6cd629d2f14f1849154fecfc') in 0.158750 seconds 
+  Import took 0.168216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Textures/ItemSlotBG.png
+  artifactKey: Guid(b1b5a68eb3724b045b7260de84529e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/ItemSlotBG.png using Guid(b1b5a68eb3724b045b7260de84529e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1bc36044d31808d69cf613d063d4c7') in 0.015668 seconds 
+  Import took 0.075329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002080 seconds.
+  path: Assets/Textures/ToolbarHighlight.png
+  artifactKey: Guid(2f0e6b026ee2dbf47be54fa7b376f713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/ToolbarHighlight.png using Guid(2f0e6b026ee2dbf47be54fa7b376f713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afdbc0ace179abd6790118874192a42a') in 0.016220 seconds 
+  Import took 0.043012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009451 seconds.
+  path: Assets/Textures/ToolbarHighlight.png
+  artifactKey: Guid(2f0e6b026ee2dbf47be54fa7b376f713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/ToolbarHighlight.png using Guid(2f0e6b026ee2dbf47be54fa7b376f713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afdbc0ace179abd6790118874192a42a') in 0.013970 seconds 
+  Import took 0.058231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1478.901419 seconds.
+  path: Assets/Prefab/Chunk.prefab
+  artifactKey: Guid(90c3dae2934dd8f489f44208e06163dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Chunk.prefab using Guid(90c3dae2934dd8f489f44208e06163dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94816c0a30fbeffa274054916b32c1d8') in 0.319620 seconds 
+  Import took 0.374252 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.688703 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 6.37 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.44 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.304 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.11 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.5 MB.
+System memory in use after: 149.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4067.
+Total: 9.837500 ms (FindLiveObjects: 0.684500 ms CreateObjectMapping: 0.236300 ms MarkObjects: 8.215000 ms  DeleteObjects: 0.697200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.508273 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.07 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.932 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.11 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.5 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4071.
+Total: 6.308100 ms (FindLiveObjects: 0.543900 ms CreateObjectMapping: 0.199800 ms MarkObjects: 5.497300 ms  DeleteObjects: 0.063900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.472545 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.963 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.37 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.5 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4075.
+Total: 9.262900 ms (FindLiveObjects: 0.673600 ms CreateObjectMapping: 0.340900 ms MarkObjects: 8.210300 ms  DeleteObjects: 0.035100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.201151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 8.23 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.47 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.310 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.11 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.5 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4079.
+Total: 91.720700 ms (FindLiveObjects: 15.342200 ms CreateObjectMapping: 0.394300 ms MarkObjects: 75.844800 ms  DeleteObjects: 0.135300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.901770 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 4.44 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.36 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.735 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.10 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4083.
+Total: 16.606800 ms (FindLiveObjects: 1.150700 ms CreateObjectMapping: 0.317800 ms MarkObjects: 15.050800 ms  DeleteObjects: 0.085700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.865366 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.51 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.32 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.918 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 12.36 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.12 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4087.
+Total: 261.271200 ms (FindLiveObjects: 39.670700 ms CreateObjectMapping: 7.013600 ms MarkObjects: 207.862300 ms  DeleteObjects: 6.721300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.905852 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.46 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.195 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4091.
+Total: 38.635800 ms (FindLiveObjects: 3.424100 ms CreateObjectMapping: 0.847700 ms MarkObjects: 34.316600 ms  DeleteObjects: 0.040400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.988898 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.58 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.32 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.410 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4095.
+Total: 17.960700 ms (FindLiveObjects: 1.608600 ms CreateObjectMapping: 0.281400 ms MarkObjects: 16.027900 ms  DeleteObjects: 0.040200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 2.416829 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 7.78 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 60.12 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\Nouveau dossier\GitHub\projet-vr\Projet vr\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.814 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 11 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 3466 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 4099.
+Total: 38.392500 ms (FindLiveObjects: 4.537500 ms CreateObjectMapping: 0.593900 ms MarkObjects: 32.787100 ms  DeleteObjects: 0.470100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
