@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[System.Serializable]
 public static class ItemProperties
 {
     public static Dictionary<ItemName, ItemType> itemTypes ;
     public static Dictionary<ItemName, int> stackable;
     public static ItemName itemName;
 
-    public enum ItemType
+    [System.Serializable] public enum ItemType
     {
         BLOC,
         TOOL
     }
 
-    public enum ItemName
+    [SerializeField] public enum ItemName
     {
         DIRT_BLOC,
         STONE_BLOC,

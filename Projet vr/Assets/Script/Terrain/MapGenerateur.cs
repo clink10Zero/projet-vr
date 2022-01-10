@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static ItemProperties;
+
 
 public class MapGenerateur : MonoBehaviour
 {
@@ -28,6 +30,11 @@ public class MapGenerateur : MonoBehaviour
 
    public Dictionary< (int,int), Chunk> chunks;
 
+    void Start()
+    {
+        Generation();
+    }
+
     public void Generation()
     {
         this.chunks = new Dictionary<(int,int), Chunk>();
@@ -51,6 +58,41 @@ public class MapGenerateur : MonoBehaviour
             }
         }
     }
+    
+    public void EditWorld(float x, float y, float z, bool value, ItemName type)
+    {
+        int xCheck = Mathf.FloorToInt(x);
+        int yCheck = Mathf.FloorToInt(y);
+        int zCheck = Mathf.FloorToInt(z);
+
+        int xChunk = xCheck / 16;
+        int zChunk = zCheck / 16;
+
+        xCheck -= (xChunk * 16);
+        zCheck -= (zChunk * 16);
+
+        this.chunks[(xChunk, zChunk)].data[xChunk, yCheck, zChunk].terre = value;
+        if(value)
+        {
+            this.chunks[(xChunk, zChunk)].data[xChunk, yCheck, zChunk].blocType = type;
+        }
+        this.chunks[(xChunk, zChunk)].refresh();
+    }
+
+    public bool CheckBloc(float x, float y, float z)
+    {
+        int xCheck = Mathf.FloorToInt(x);
+        int yCheck = Mathf.FloorToInt(y);
+        int zCheck = Mathf.FloorToInt(z);
+
+        int xChunk = xCheck / 16;
+        int zChunk = zCheck / 16;
+
+        xCheck -= (xChunk * 16);
+        zCheck -= (zChunk * 16);
+
+        return this.chunks[(xChunk, zChunk)].data[xChunk, yCheck, zChunk].terre;
+    }
 
     public void Clear()
     {
@@ -59,7 +101,7 @@ public class MapGenerateur : MonoBehaviour
             for (int z = 0; z < 2; z++)
             {
                 Chunk courant = this.chunks[(x, z)];
-                courant.clear();
+                GameObject.Destroy(courant.gameObject);
             }
         }
     }

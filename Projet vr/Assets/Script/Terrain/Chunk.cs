@@ -10,9 +10,9 @@ public class Chunk : MonoBehaviour
 
     public Bloc[,,] data;
     
-    private List<Vector3> vertices;
-    private List<int> triangles;
-    private List<Vector2> uv;
+    public List<Vector3> vertices;
+    public List<int> triangles;
+    public List<Vector2> uv;
 
     Mesh mesh;
 
@@ -30,6 +30,8 @@ public class Chunk : MonoBehaviour
         this.ySize = ySize;
         this.zSize = zSize;
 
+        this.data = new Bloc[xSize, ySize, zSize];
+
         this.x = x;
         this.z = z;
 
@@ -41,14 +43,13 @@ public class Chunk : MonoBehaviour
         setData(height, map, seuil);
 
         Debug.Log("chunk : " + x + " : " + z  + "\n" +
-            "vertices : " + vertices.Count + "\n" +
-            "triangles : " + triangles.Count + "\n" +
-            "uv : " + uv.Count + "\n");
+            "vertices : " + this.vertices.Count + "\n" +
+            "triangles : " + this.triangles.Count + "\n" +
+            "uv : " + this.uv.Count + "\n");
     }
 
     private void setData(float[,] height, float[,,] map, float seuil)
     {
-        data = new Bloc[xSize, ySize, zSize];
         for (int x = 0; x < xSize; x++)
         {
             for (int z = 0; z < zSize; z++)
@@ -57,35 +58,28 @@ public class Chunk : MonoBehaviour
                 for (int y = 0; y < ySize; y++)
                 {
                     Vector3 postionChunk = this.transform.position;
-                    data[x, y, z] = Instantiate<Bloc>(blocPatron, new Vector3(postionChunk.x + x, postionChunk.y + y, postionChunk.z + z), Quaternion.identity, this.transform);
+                    //data[x, y, z] = Instantiate<Bloc>(blocPatron, new Vector3(postionChunk.x + x, postionChunk.y + y, postionChunk.z + z), Quaternion.identity, this.transform);
+                    this.data[x, y, z] = new Bloc();
                     if (y < yHeight) {
-                        //if (map[x, y, z] < seuil)
-                        //{
-                            data[x, y, z].terre = true;
-
-                        //}
-                        //else
-                        //{
-                        //data[x, y, z].terre = false;
-                        //}
+                            this.data[x, y, z].terre = true;
                         if (y<30)
                         {
-                            data[x, y, z].blocType = ItemProperties.ItemName.STONE_BLOC;
+                            this.data[x, y, z].blocType = ItemProperties.ItemName.STONE_BLOC;
                         }
                         else
                         {
                             if (y<50)
                             {
-                                data[x, y, z].blocType = ItemProperties.ItemName.DIRT_BLOC;
+                                this.data[x, y, z].blocType = ItemProperties.ItemName.DIRT_BLOC;
                             }
                             else
                             {
-                                data[x, y, z].blocType = ItemProperties.ItemName.SNOW_BLOC;
+                                this.data[x, y, z].blocType = ItemProperties.ItemName.SNOW_BLOC;
                             }
                         }
                     }
                     else
-                        data[x, y, z].terre = false;
+                        this.data[x, y, z].terre = false;
                 }
             }
         }
@@ -110,7 +104,7 @@ public class Chunk : MonoBehaviour
             {
                 for (int y = 0; y < ySize; y++)
                 {
-                    if(data[x, y, z].terre)
+                    if(this.data[x, y, z].terre)
                         triangulationCube(x, z, y);
                 }
             }

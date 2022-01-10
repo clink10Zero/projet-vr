@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using static ItemProperties;
 
-public class Item : MonoBehaviour
+[CreateAssetMenu(fileName = "Item")]
+public class Item : ScriptableObject
 {
     public ItemName itemName;
+    public ItemType itemType;
+
+    public Color couleur;
+    public GameObject model;
 
 }

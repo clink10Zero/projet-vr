@@ -10,6 +10,8 @@ public class continuousMovement : MonoBehaviour
 {
     public float speed = 1;
     public XRNode inputSource;
+    public XRNode inputSourceRotation;
+
     public float gravity = -9.81f;
     public LayerMask groundlayer;
     public float additionalHeight = 0.2f;
@@ -17,6 +19,8 @@ public class continuousMovement : MonoBehaviour
     private float fallingSpeed;
     public  XROrigin rig;
     private Vector2 inputAxis;
+    private Vector2 inputAxisRotatation;
+
     private CharacterController character;
 
     // Start is called before the first frame update
@@ -30,7 +34,9 @@ public class continuousMovement : MonoBehaviour
     void Update()
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
+        InputDevice device2 = InputDevices.GetDeviceAtXRNode(inputSourceRotation);
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+        device2.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxisRotatation);
     }
 
     void FixedUpdate()
@@ -49,6 +55,8 @@ public class continuousMovement : MonoBehaviour
         else
             fallingSpeed = 0;
         character.Move(Vector3.up * fallingSpeed * Time.fixedDeltaTime);
+
+        rig.gameObject.transform.rotation *= (Quaternion.Euler(0, 10 * (-inputAxisRotatation.y), 0));
     }
 
     void CapsuleFollowHeadset()

@@ -1,15 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using static ItemProperties;
 
 public class Inventory : MonoBehaviour
 {
     private static int INVENTORY_ROWS = 4;// barre inclu
     private static int INVENTORY_ROWS_SIZE = 10;
+
+    [SerializeField] private Item[] itemsStart;
+    [SerializeField] private Button[] barre = new Button[INVENTORY_ROWS_SIZE];
+    [SerializeField] private HandItem hand;
+
     (Item,int)[,] itemList = new (Item,int)[INVENTORY_ROWS, INVENTORY_ROWS_SIZE];
     int currentItemRow = 0;
     int currentItemPosition = 0;
+
+    public void setCurrent(int indice)
+    {
+        currentItemPosition = indice;
+        hand.selecter = itemList[0, indice].Item1;
+    }
+
+
+    public void Start()
+    {
+        for(int i = 0; i < 2; i ++)
+        {
+            itemList[0, i] = (itemsStart[i], 0);
+        }
+    }
+
+    public void Update()
+    {
+        for(int i = 0; i < 10; i++)
+        {
+            if (currentItemPosition == i)
+                barre[i].GetComponent<Image>().color = Color.yellow;
+            else
+                barre[i].GetComponent<Image>().color = Color.white;
+
+            if (itemList[0, i].Item1 != null)
+                barre[i].GetComponentInChildren<Text>().text = itemList[0, i].Item1.name;
+            else
+                barre[i].GetComponentInChildren<Text>().text = "";
+        }
+    }
 
     bool addItem(Item item)
     {
