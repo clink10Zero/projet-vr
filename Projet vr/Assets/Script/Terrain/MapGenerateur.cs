@@ -37,11 +37,12 @@ public class MapGenerateur : MonoBehaviour
 
     public void Generation()
     {
+        ItemProperties.GenerationDico();
         this.chunks = new Dictionary<(int,int), Chunk>();
         Vector3 postionMap = map.transform.position;
-        for(int x = 0; x < 2; x++)
+        for(int x = 0; x < 1; x++)
         {
-            for(int z = 0; z < 2; z++)
+            for(int z = 0; z < 1; z++)
             {
                 Chunk courant = Instantiate<Chunk>(patronChunk, new Vector3(postionMap.x + (x * 16), postionMap.y, postionMap.z + (z * 16)), Quaternion.identity, map);
                 courant.createChunk(16, 256, 16, x, z, seed, noiseScale, octaves, persistance, lacunarity, new Vector3(x * 16, 0, z * 16), new Vector2(x * 16, z * 16), seuil, this);
@@ -49,9 +50,9 @@ public class MapGenerateur : MonoBehaviour
             }
         }
         
-        for(int x = 0; x < 2; x++)
+        for(int x = 0; x < 1; x++)
         {
-            for(int z = 0; z < 2; z++)
+            for(int z = 0; z < 1; z++)
             {
                 Chunk courant = this.chunks[(x, z)];
                 courant.refresh();

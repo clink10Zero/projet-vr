@@ -1,27 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static ItemProperties;
 
 public class Chunk : MonoBehaviour
 {
+    public static int TextureAtlasSizeInBlocks = 4;
+    public static float NormalizedBlockTextureSize = (float)(1f / (float)TextureAtlasSizeInBlocks);
     public int xSize, ySize, zSize;
     public int x, z;
     public Bloc blocPatron;
 
     public Bloc[,,] data;
-    
-    public List<Vector3> vertices;
-    public List<int> triangles;
-    public List<Vector2> uv;
+
+    private List<Vector3> vertices;
+    private List<int> triangles;
+    private List<Vector2> uv;
 
     Mesh mesh;
 
     public AnimationCurve modificateur;
 
     public MapGenerateur map;
+    Renderer rend;
 
     public void createChunk(int xSize, int ySize, int zSize, int x, int z, int seed, float noiseScale, int octaves, float persistance, float lacunarity, Vector3 offset3D, Vector2 offset2D, float seuil, MapGenerateur mapGen)
     {
+        //rend = GetComponent<Renderer>();
+        //rend.sharedMaterial.shader = Shader.Find("Shader Graphs/TerrainLit");
         this.vertices = new List<Vector3>();
         this.triangles = new List<int>();
         this.uv = new List<Vector2>();
@@ -60,15 +66,25 @@ public class Chunk : MonoBehaviour
                     Vector3 postionChunk = this.transform.position;
                     //data[x, y, z] = Instantiate<Bloc>(blocPatron, new Vector3(postionChunk.x + x, postionChunk.y + y, postionChunk.z + z), Quaternion.identity, this.transform);
                     this.data[x, y, z] = new Bloc();
-                    if (y < yHeight) {
-                            this.data[x, y, z].terre = true;
-                        if (y<30)
+
+                    if (y < yHeight)
+                    {
+                        //if (map[x, y, z] < seuil)
+                        //{
+                        data[x, y, z].terre = true;
+
+                        //}
+                        //else
+                        //{
+                        //data[x, y, z].terre = false;
+                        //}
+                        if (y < 30)
                         {
                             this.data[x, y, z].blocType = ItemProperties.ItemName.STONE_BLOC;
                         }
                         else
                         {
-                            if (y<50)
+                            if (y < 40)
                             {
                                 this.data[x, y, z].blocType = ItemProperties.ItemName.DIRT_BLOC;
                             }
@@ -97,7 +113,6 @@ public class Chunk : MonoBehaviour
         vertices.Clear();
         triangles.Clear();
         uv.Clear();
-
         for (int x = 0; x < xSize; x++)
         {
             for (int z = 0; z < zSize; z++)
@@ -110,29 +125,29 @@ public class Chunk : MonoBehaviour
             }
         }
     }
-
-    public void triangulationCube(int x, int z, int y)
+    public void triangulationCube(int x, int y, int z)
     {
         mesh = new Mesh();
+        FaceTexture text = ItemProperties.itemTextures[data[x, y, z].blocType];
         //top
         if (!data[x, y + 1, z].terre)
         {
-             this.AddFace(new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f));
+            this.AddFaceAndTexture(new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), text.GetTextureID(FACE.TOP));
         }
-       
+
         //bottom
-        if(y > 0 && !data[x, y - 1, z].terre)
+        if (y > 0 && !data[x, y - 1, z].terre)
         {
-            this.AddFace(new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
+            this.AddFaceAndTexture(new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f), text.GetTextureID(FACE.BOTTOM));
         }
         //pas de else, y a pas de truc sous le sol
 
         //north
-        if(z != zSize -1)
+        if (z != zSize - 1)
         {
-            if(!data[x, y, z + 1].terre)
+            if (!data[x, y, z + 1].terre)
             {
-                this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f));
+                this.AddFaceAndTexture(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f), text.GetTextureID(FACE.BACK));
             }
         }
         else
@@ -141,20 +156,21 @@ public class Chunk : MonoBehaviour
             {
                 if (!map.chunks[(this.x, this.z + 1)].data[x, y, 0].terre)
                 {
-                    this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f));
+                    this.AddFaceAndTexture(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f), text.GetTextureID(FACE.BACK));
                 }
             }
-            catch(KeyNotFoundException){
-                //this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f));
+            catch (KeyNotFoundException)
+            {
+                this.AddFaceAndTexture(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 1f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 1f, y + 1f, z + 1f), text.GetTextureID(FACE.BACK));
             }
         }
 
         //south
-        if(z != 0)
+        if (z != 0)
         {
-            if(!data[x, y, z - 1].terre)
+            if (!data[x, y, z - 1].terre)
             {
-                this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
+                this.AddFaceAndTexture(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f), text.GetTextureID(FACE.FRONT));
             }
         }
         else
@@ -163,22 +179,22 @@ public class Chunk : MonoBehaviour
             {
                 if (!map.chunks[(this.x, this.z - 1)].data[x, y, zSize - 1].terre)
                 {
-                    this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
+                    this.AddFaceAndTexture(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f), text.GetTextureID(FACE.FRONT));
                 }
             }
             catch (KeyNotFoundException)
             {
-                //this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f));
+                this.AddFaceAndTexture(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), new Vector3(x + 0f, y + 0f, z + 0f), text.GetTextureID(FACE.FRONT));
             }
 
         }
 
         //east
-        if(x != xSize - 1)
+        if (x != xSize - 1)
         {
-            if(!data[x + 1, y, z].terre)
+            if (!data[x + 1, y, z].terre)
             {
-                this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f));
+                this.AddFaceAndTexture(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f), text.GetTextureID(FACE.RIGHT));
             }
         }
         else
@@ -187,22 +203,22 @@ public class Chunk : MonoBehaviour
             {
                 if (!map.chunks[(this.x + 1, this.z)].data[0, y, z].terre)
                 {
-                    this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f));
+                    this.AddFaceAndTexture(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f), text.GetTextureID(FACE.RIGHT));
                 }
             }
             catch (KeyNotFoundException)
             {
-                //this.AddFace(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f));
+                this.AddFaceAndTexture(new Vector3(x + 1f, y + 1f, z + 0f), new Vector3(x + 1f, y + 1f, z + 1f), new Vector3(x + 1f, y + 0f, z + 0f), new Vector3(x + 1f, y + 0f, z + 1f), text.GetTextureID(FACE.RIGHT));
             }
-           
+
         }
 
         //west
-        if(x != 0)
+        if (x != 0)
         {
-            if(!data[x - 1, y, z].terre)
+            if (!data[x - 1, y, z].terre)
             {
-                this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f));
+                this.AddFaceAndTexture(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), text.GetTextureID(FACE.LEFT));
             }
         }
         else
@@ -211,12 +227,12 @@ public class Chunk : MonoBehaviour
             {
                 if (!map.chunks[(this.x - 1, this.z)].data[xSize - 1, y, z].terre)
                 {
-                    this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f));
+                    this.AddFaceAndTexture(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), text.GetTextureID(FACE.LEFT));
                 }
             }
             catch (KeyNotFoundException)
             {
-                //this.AddFace(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f));
+                this.AddFaceAndTexture(new Vector3(x + 0f, y + 0f, z + 1f), new Vector3(x + 0f, y + 1f, z + 1f), new Vector3(x + 0f, y + 0f, z + 0f), new Vector3(x + 0f, y + 1f, z + 0f), text.GetTextureID(FACE.LEFT));
             }
 
         }
@@ -225,41 +241,42 @@ public class Chunk : MonoBehaviour
         mesh.triangles = triangles.ToArray();
         mesh.uv = uv.ToArray();
         mesh.RecalculateNormals();
-        
+
         this.GetComponent<MeshFilter>().mesh = mesh;
         this.GetComponent<MeshCollider>().sharedMesh = mesh;
     }
 
-    public void AddFace(Vector3 v1, Vector3 v2, Vector3 v3, Vector3 v4)
+
+    public void AddFaceAndTexture(Vector3 v1, Vector3 v2, Vector3 v3, Vector3 v4, int textureID)
     {
-        int index = this.vertices.Count;
+        int index = this.vertices.Count - 1;
 
-        (int, int) indexV1 = getIndex(index,v1);
-        (int, int) indexV2 = getIndex(indexV1.Item1, v2);
-        (int, int) indexV3 = getIndex(indexV2.Item1, v3);
-        (int, int) indexV4 = getIndex(indexV3.Item1, v4);
+        float y = textureID / TextureAtlasSizeInBlocks;
+        float x = textureID - (y * TextureAtlasSizeInBlocks);
 
-        this.triangles.Add(indexV1.Item2);
-        this.triangles.Add(indexV2.Item2);
-        this.triangles.Add(indexV3.Item2);
-        this.triangles.Add(indexV2.Item2);
-        this.triangles.Add(indexV4.Item2);
-        this.triangles.Add(indexV3.Item2);
+        x *= NormalizedBlockTextureSize;
+        y *= NormalizedBlockTextureSize;
+
+        y = 1f - y - NormalizedBlockTextureSize;
+
+        this.vertices.Add(v1);
+        this.vertices.Add(v2);
+        this.vertices.Add(v3);
+        this.vertices.Add(v4);
+
+        uv.Add(new Vector2(x, y));
+        uv.Add(new Vector2(x, y + NormalizedBlockTextureSize));
+        uv.Add(new Vector2(x + NormalizedBlockTextureSize, y));
+        uv.Add(new Vector2(x + NormalizedBlockTextureSize, y + NormalizedBlockTextureSize));
+
+
+        this.triangles.Add(index + 1);
+        this.triangles.Add(index + 2);
+        this.triangles.Add(index + 3);
+        this.triangles.Add(index + 2);
+        this.triangles.Add(index + 4);
+        this.triangles.Add(index + 3);
     }
 
-    (int,int) getIndex(int index, Vector3 v1)
-    {
-        int indexV1 = index;
-        int tmp = this.vertices.IndexOf(v1);
-        if (tmp != -1)//s'il existe déjà
-        {
-            indexV1 = tmp;
-        }
-        else
-        {
-            this.vertices.Add(v1);
-            index++;
-        }
-        return (index,indexV1);
-    }
 }
+

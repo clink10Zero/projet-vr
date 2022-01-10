@@ -9,5 +9,4 @@ public class Bloc
     public ItemName blocType;
     //s'il faut y afficher, = ce n'est pas de l'air/du vide
     public bool terre = false;
-
 }

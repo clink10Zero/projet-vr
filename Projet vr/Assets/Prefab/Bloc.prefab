@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b9602d6775c2f4b8f5c07912f0d0d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terre: 0
+  blocType: 0
+  terre: 1

@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Terrain
   m_Shader: {fileID: -6465566751694194690, guid: c5fe122cbc48edb4595afc6003faad80, type: 3}
-  m_ShaderKeywords: _GLOSSYREFLECTIONS_OFF
+  m_ShaderKeywords: ENUM_14C4A6C5FBF24D24A3DC3180977A7582_SNOW _GLOSSYREFLECTIONS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -76,10 +76,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - ENUM_14C4A6C5FBF24D24A3DC3180977A7582: 0
     - Vector1_08a00828335b446888203331a5e30375: 40
     - Vector1_8636eeb5959b4725947385f776aa76a4: 30
+    - Vector1_fc54ea931a5b4ac29dda1d6f1688d1fe: 2
     - _AlphaClip: 0
     - _Blend: 0
+    - _BlocType: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -110,7 +113,7 @@ Material:
     - Color_07000befbbb94efabafd598b9d5909e1: {r: 0.4227483, g: 0.9433962, b: 0.478257, a: 0}
     - Color_852849c8c8414ecca76c9e565ac9f597: {r: 1, g: 1, b: 1, a: 0}
     - Color_95a52c01fd1848daaa84e12b6f74de78: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 0}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0, g: 0, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
