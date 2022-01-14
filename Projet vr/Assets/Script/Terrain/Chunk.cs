@@ -120,7 +120,7 @@ public class Chunk : MonoBehaviour
                 for (int y = 0; y < ySize; y++)
                 {
                     if(this.data[x, y, z].terre)
-                        triangulationCube(x, z, y);
+                        triangulationCube(x, y, z);
                 }
             }
         }
