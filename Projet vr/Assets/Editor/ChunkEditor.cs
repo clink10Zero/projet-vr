@@ -15,6 +15,6 @@ public class ChunkEditor : Editor
 
         GUILayout.HorizontalSlider(niveau, 0, 64);
         GUILayout.Space(10);
-        GUILayout.Label("" + c.data.Length.ToString());
+        //GUILayout.Label("" + c.data.Length.ToString());
     }
 }
